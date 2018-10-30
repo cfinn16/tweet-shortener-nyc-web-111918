@@ -31,5 +31,6 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet
+  tweet.split("").map do |phrase|
+    if 
 end
