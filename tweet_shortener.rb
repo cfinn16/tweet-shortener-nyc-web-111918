@@ -31,7 +31,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.split(" ").map do |phrase|
+  tweet.split("").map do |phrase|
     if phrase.length > 140
       puts word_substituter(phrase)
     elsif phrase.length <= 140
