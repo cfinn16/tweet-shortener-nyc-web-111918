@@ -35,6 +35,5 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
-  lingo_tweet = puts word_substituter(tweet)
-  lingo_tweet.length > 140 ? "#{lingo_tweet[0..139]}..." : lingo_tweet
+  word_substituter(tweet).length > 140 ? "#{lingo_tweet[0..139]}..." : lingo_tweet
 end
